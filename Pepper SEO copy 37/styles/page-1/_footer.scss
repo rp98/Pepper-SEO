@@ -1,0 +1,563 @@
+$primary-gray: #888888;
+$primary-gray: #999999;
+$footer-light-gray: #bfbfbf;
+
+footer {
+    position: relative;
+    background: $primary-blue;
+
+    .bottom {
+        position: relative;
+        width: 100%;
+
+        font-family: $primary-font;
+
+        @include mq_sp() {
+            width: 90%;
+            margin: 0 auto;
+            padding: 5vh 0;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, max-content);
+            place-items: center;
+
+            .logo {
+                display: none;
+                position: relative;
+
+                grid-row: 1/3;
+                grid-column: 1 / span 1;
+            }
+
+            .quick-links {
+                display: none;
+                position: relative;
+
+                grid-column: span 1/-2;
+                grid-row: 1/3;
+
+                .title {
+                    position: relative;
+
+                    @include res-font-size(18, 24);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    padding-bottom: 10px;
+                    color: $primary-gray;
+                }
+
+                .links {
+                    position: relative;
+
+                    @include res-font-size(14, 20);
+                    font-weight: 400;
+
+                    .linkItems {
+                        position: relative;
+                        padding: 0.5rem 0;
+                        color: $primary-gray;
+                    }
+                }
+            }
+
+            .address-wrapper {
+                position: relative;
+                grid-row: 1 / span 1;
+                text-align: center;
+
+                .title {
+                    position: relative;
+
+                    @include res-font-size(18, 24);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    padding-bottom: 10px;
+                    color: $primary-gray;
+                }
+                width: 80%;
+                margin: 0 auto;
+                padding: 5vh 0;
+
+                .desc {
+                    @include res-font-size(14, 20);
+                    font-weight: 400;
+                    color: $primary-gray;
+
+                    > div {
+                        position: relative;
+                        padding: 5px 0;
+                    }
+                }
+            }
+
+            .anirudh {
+                position: relative;
+                color: $footer-light-gray;
+                grid-row: 2 / span 1;
+                text-align: center;
+                padding: 2vh 0;
+
+                .name {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                }
+                .mail {
+                    position: relative;
+                    color: $primary-gray;
+
+                    span {
+                        padding-left: 0.5rem;
+                    }
+
+                    svg {
+                        display: none;
+                        width: 20px !important;
+                        path {
+                            fill: $primary-gray !important;
+                        }
+                    }
+                }
+            }
+
+            .rishabh {
+                position: relative;
+                color: $footer-light-gray;
+                grid-row: 3 / span 1;
+                text-align: center;
+                padding: 2vh 0;
+
+                .name {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                }
+
+                .mail {
+                    position: relative;
+                    color: $primary-gray;
+                    span {
+                        padding-left: 0.5rem;
+                    }
+
+                    svg {
+                        display: none;
+                        width: 20px !important;
+                        path {
+                            fill: $primary-gray !important;
+                        }
+                    }
+                }
+            }
+
+            .group {
+                position: relative;
+
+                grid-row: span 1/-1;
+
+                display: grid;
+                place-items: center;
+                padding-top: 5vh;
+
+                .social {
+                    position: relative;
+
+                    display: flex;
+
+                    padding: 0.5rem 0;
+
+                    svg {
+                        path {
+                            fill: $primary-gray !important;
+                        }
+                    }
+
+                    .icons {
+                        position: relative;
+
+                        padding: 0 10px;
+                        height: 20px;
+
+                        svg {
+                            width: auto !important;
+                        }
+                    }
+                }
+
+                .info {
+                    position: relative;
+                    color: $primary-gray;
+                    text-align: center;
+
+                    @include res-font-size(10, 14);
+
+                    padding: 0.5rem 0 0 0;
+                }
+            }
+        }
+
+        @include mq_rest() {
+            width: 90%;
+            margin: 0 auto;
+            padding: 5vh 0;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, max-content);
+            place-items: center;
+
+            .logo {
+                display: none;
+                position: relative;
+
+                grid-row: 1/3;
+                grid-column: 1 / span 1;
+
+                svg {
+                    path {
+                        fill: $primary-gray !important;
+                    }
+                }
+            }
+
+            .quick-links {
+                display: none;
+                position: relative;
+
+                grid-column: span 1/-2;
+                grid-row: 1/3;
+
+                .title {
+                    position: relative;
+
+                    @include res-font-size(18, 24);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    padding-bottom: 10px;
+                    color: $primary-gray;
+                }
+
+                .links {
+                    position: relative;
+
+                    @include res-font-size(14, 20);
+                    font-weight: 400;
+
+                    .linkItems {
+                        position: relative;
+                        padding: 0.5rem 0;
+                        color: $primary-gray;
+                    }
+                }
+            }
+
+            .address-wrapper {
+                position: relative;
+                grid-row: 1 / span 1;
+                text-align: center;
+
+                .title {
+                    position: relative;
+
+                    @include res-font-size(18, 24);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    padding-bottom: 10px;
+                    color: $primary-gray;
+                }
+                width: 80%;
+                margin: 0 auto;
+                padding: 5vh 0;
+
+                .desc {
+                    @include res-font-size(14, 20);
+                    font-weight: 400;
+                    color: $primary-gray;
+
+                    > div {
+                        position: relative;
+                        padding: 5px 0;
+                    }
+                }
+            }
+
+            .anirudh {
+                position: relative;
+                color: $footer-light-gray;
+                grid-row: 2 / span 1;
+                text-align: center;
+                padding: 2vh 0;
+
+                .name {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                }
+                .mail {
+                    position: relative;
+                    color: $primary-gray;
+                }
+            }
+
+            .rishabh {
+                position: relative;
+                color: $footer-light-gray;
+                grid-row: 3 / span 1;
+                text-align: center;
+                padding: 2vh 0;
+
+                .name {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                }
+
+                .mail {
+                    position: relative;
+                    color: $primary-gray;
+                }
+            }
+
+            .group {
+                position: relative;
+
+                grid-row: span 1/-1;
+
+                display: grid;
+                place-items: center;
+                padding-top: 5vh;
+
+                .social {
+                    position: relative;
+
+                    display: flex;
+
+                    padding: 0.5rem 0;
+
+                    svg {
+                        path {
+                            fill: $primary-gray !important;
+                        }
+                    }
+
+                    .icons {
+                        position: relative;
+
+                        padding: 0 10px;
+                        height: 20px;
+
+                        svg {
+                            width: auto !important;
+                        }
+                    }
+                }
+
+                .info {
+                    position: relative;
+                    color: $primary-gray;
+                    @include res-font-size(10, 14);
+                    text-align: center;
+
+                    padding: 0.5rem 0 0 0;
+                }
+            }
+        }
+
+        @include mq_dl() {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10vh 0;
+            display: grid;
+            grid-template-columns: 1fr minmax(200px, 250px) 1fr 1fr;
+            grid-template-rows: repeat(3, max-content);
+
+            .logo {
+                position: relative;
+
+                grid-row: 1/3;
+                grid-column: 1 / span 1;
+
+                svg {
+                    path {
+                        fill: $footer-light-gray !important;
+                    }
+                }
+            }
+
+            .quick-links {
+                position: relative;
+
+                grid-column: span 1/-2;
+                grid-row: 1/3;
+
+                .title {
+                    position: relative;
+
+                    @include res-font-size(18, 24);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    padding-bottom: 10px;
+                    color: $footer-light-gray;
+                }
+
+                .links {
+                    position: relative;
+
+                    @include res-font-size(14, 20);
+                    font-weight: 400;
+
+                    .linkItems {
+                        position: relative;
+                        padding: 0.5rem 0;
+                        color: $primary-gray;
+                    }
+                }
+            }
+
+            .address-wrapper {
+                position: relative;
+
+                grid-row: 1/3;
+                grid-column: span 1/-1;
+
+                .title {
+                    position: relative;
+
+                    @include res-font-size(18, 24);
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    padding-bottom: 10px;
+                    color: $footer-light-gray;
+                }
+
+                .desc {
+                    @include res-font-size(14, 20);
+                    font-weight: 400;
+                    color: $primary-gray;
+
+                    > div {
+                        position: relative;
+
+                        padding: 5px 0;
+                    }
+                }
+            }
+
+            .anirudh {
+                position: relative;
+                color: $footer-light-gray;
+
+                grid-row: span 1/-1;
+                grid-column: span 1/-2;
+
+                align-self: flex-end;
+
+                .name {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                }
+                .mail {
+                    position: relative;
+                    color: $primary-gray;
+
+                    span {
+                        padding-left: 0.5rem;
+                    }
+
+                    svg {
+                        width: 20px !important;
+                        path {
+                            fill: $primary-gray !important;
+                        }
+                    }
+                }
+            }
+
+            .rishabh {
+                position: relative;
+                color: $footer-light-gray;
+
+                grid-row: span 1/-1;
+                grid-column: span 1/-1;
+
+                align-self: flex-end;
+
+                .name {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                }
+
+                .mail {
+                    position: relative;
+                    color: $primary-gray;
+                    span {
+                        padding-left: 0.5rem;
+                    }
+
+                    svg {
+                        width: 20px !important;
+                        path {
+                            fill: $primary-gray !important;
+                        }
+                    }
+                }
+            }
+
+            .group {
+                position: relative;
+
+                grid-row: span 1/-1;
+                grid-column: 1/2;
+
+                display: grid;
+                place-items: center;
+                padding-top: 1rem;
+
+                .social {
+                    position: relative;
+
+                    display: flex;
+
+                    padding: 0.5rem 0;
+
+                    svg {
+                        path {
+                            fill: $footer-light-gray !important;
+                        }
+                    }
+
+                    .icons {
+                        position: relative;
+
+                        padding: 0 1rem;
+                        height: 30px;
+                    }
+                }
+
+                .info {
+                    position: relative;
+                    color: $primary-gray;
+                    @include res-font-size(10, 14);
+                    text-align: center;
+
+                    padding: 0.5rem 0 0 0;
+                }
+            }
+        }
+    }
+}
